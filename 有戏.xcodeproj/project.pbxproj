@@ -55,6 +55,7 @@
 		9EEF592D1ADB941F00326755 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEF592C1ADB941F00326755 /* libstdc++.dylib */; };
 		9EEF592F1ADB942700326755 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEF592E1ADB942700326755 /* libsqlite3.dylib */; };
 		9EEF59321ADB944B00326755 /* ZFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF59311ADB944B00326755 /* ZFViewController.m */; };
+		9EFEC32B1ADBD2F0005A7D1A /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EFEC32A1ADBD2F0005A7D1A /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		9EEF592E1ADB942700326755 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9EEF59301ADB944B00326755 /* ZFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFViewController.h; sourceTree = "<group>"; };
 		9EEF59311ADB944B00326755 /* ZFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFViewController.m; sourceTree = "<group>"; };
+		9EFEC32A1ADBD2F0005A7D1A /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 		9EEF58B11ADB936E00326755 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9EFEC3291ADBD2E5005A7D1A /* image */,
 				9EEF58B21ADB936E00326755 /* 有戏-Info.plist */,
 				9EEF58B31ADB936E00326755 /* InfoPlist.strings */,
 				9EEF58B61ADB936E00326755 /* main.m */,
@@ -374,6 +377,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		9EFEC3291ADBD2E5005A7D1A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEC32A1ADBD2F0005A7D1A /* test.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -453,6 +464,7 @@
 			files = (
 				9EEF590C1ADB938000326755 /* ShareSDKLocalizable.strings in Resources */,
 				9EEF59111ADB938000326755 /* RennSDK.bundle in Resources */,
+				9EFEC32B1ADBD2F0005A7D1A /* test.png in Resources */,
 				9EEF58B51ADB936E00326755 /* InfoPlist.strings in Resources */,
 				9EEF58BD1ADB936E00326755 /* Images.xcassets in Resources */,
 				9EEF59141ADB938000326755 /* WeiboSDK.bundle in Resources */,
@@ -715,6 +727,7 @@
 				9EEF58D51ADB936E00326755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EEF58D61ADB936E00326755 /* Build configuration list for PBXNativeTarget "有戏Tests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +736,7 @@
 				9EEF58D81ADB936E00326755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

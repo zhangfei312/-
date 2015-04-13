@@ -7,18 +7,21 @@
 //
 
 #import "ZFAppDelegate.h"
+#import "ZFViewController.h"
 #import <ShareSdk/ShareSDK.h>
 #import "WeiboSDK.h"
-#define ShareSDKKey @"fsdff"
+#define ShareSDKKey @"6819f3e0a194"
 @implementation ZFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+    //添加新浪应用
     [ShareSDK registerApp:ShareSDKKey];
     [ShareSDK connectDoubanWithAppKey:@"332998622" appSecret:@"fc3799491744fbf1e256874796dd6b14" redirectUri:@"ewadsf"];
-    
+    //添加主控制器
+    ZFViewController *mainViewControll = [[ZFViewController alloc]init];
+    self.window.rootViewController = mainViewControll;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
