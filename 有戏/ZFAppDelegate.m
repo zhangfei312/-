@@ -7,13 +7,18 @@
 //
 
 #import "ZFAppDelegate.h"
-
+#import <ShareSdk/ShareSDK.h>
+#import "WeiboSDK.h"
+#define ShareSDKKey @"fsdff"
 @implementation ZFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    [ShareSDK registerApp:ShareSDKKey];
+    [ShareSDK connectDoubanWithAppKey:@"332998622" appSecret:@"fc3799491744fbf1e256874796dd6b14" redirectUri:@"ewadsf"];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
